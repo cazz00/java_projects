@@ -7,7 +7,7 @@ public class Lab1 {
     private static Scanner scanner = new Scanner(System.in);
     private static Random random = new Random();
 
-    // Методы из ex1.java
+
     public static boolean isUpperCase(char x) {
         return x >= 'A' && x <= 'Z';
     }
@@ -19,7 +19,9 @@ public class Lab1 {
     }
 
     public static boolean isDivisor(int a, int b) {
-        return (a != 0 && b % a == 0) || (b != 0 && a % b == 0);
+        if(a == 0 || b == 0) {
+            return false;
+        }else return (a != 0 && b % a == 0) || (b != 0 && a % b == 0);
     }
 
     public static boolean isEqual(int a, int b, int c) {
@@ -95,7 +97,7 @@ public class Lab1 {
         }
     }
 
-    // Методы из ex3.java
+
     public static boolean equalNum(int x) {
         if (x < 0) {
             x = -x;
@@ -186,7 +188,7 @@ public class Lab1 {
         }
     }
 
-    // Методы из ex4.java
+
     public static void reverse(int[] arr) {
         for (int i = 0; i < arr.length / 2; i++) {
             int temp = arr[i];
@@ -257,7 +259,7 @@ public class Lab1 {
         return result;
     }
 
-    // Вспомогательные методы для ввода данных
+    //Вспомогательные методы для ввода данных
     public static char readChar() {
         while (true) {
             try {
