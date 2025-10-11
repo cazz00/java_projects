@@ -292,9 +292,6 @@ public class Main {
         int actualSum = x + y;
         System.out.println(x + " + " + y + " = " + actualSum);
         System.out.println("Результат: " + result);
-        if (actualSum >= 10 && actualSum <= 19) {
-            System.out.println("Сумма в диапазоне 10-19, поэтому возвращаем 20");
-        }
     }
 
     public static void testAge() {
@@ -334,7 +331,7 @@ public class Main {
         int x = Lab1.readInt("Введите число: ");
 
         boolean result = Lab1.equalNum(x);
-        System.out.println("Число " + x + " - " + (result ? "все цифры одинаковы" : "цифры разные"));
+        System.out.println(result);
 
         if (x < 0) x = -x;
         System.out.print("Цифры числа: ");
